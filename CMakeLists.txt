@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.19)
+project(my_hpx_ CXX)
+find_package(HPX REQUIRED)
+add_executable(my_hpx_ main.cpp)
+target_link_libraries(my_hpx_ HPX::hpx HPX::wrap_main HPX::iostreams_component)
